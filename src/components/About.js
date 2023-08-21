@@ -77,7 +77,7 @@ const About = () => {
                   {/* {
                   inView ?
                    <CountUp starts={0} end={13} duration={3}/>:null} */}
-                  <CountUp start={0} end={9} duration={3} /> +
+                  <CountUp start={0} end={10} duration={3} /> +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Project <br /> Completed
@@ -86,7 +86,7 @@ const About = () => {
               <div>
                 <div className="text-[25px] font-tertiary text-gradient mb-4">
                   {/* {inView ? <CountUp start={0} end={13} duration={3} /> : null} */}
-                  <CountUp start={0} end={1111} duration={3} /> K+
+                  <CountUp start={0} end={1211} duration={3} /> +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Rating <br /> Codeforces

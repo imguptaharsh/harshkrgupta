@@ -2,7 +2,8 @@ import React from "react";
 // imgage
 import image from "../assets/hkg.png";
 // icons
-import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn, FaCode, FaFlag} from "react-icons/fa";
+// import { FaLeetCode, FaCodeforces } from "react-icons/io"; // 
 // type animation
 import { TypeAnimation } from "react-type-animation";
 // motion
@@ -90,18 +91,25 @@ const Banner = () => {
               className="flex text-[20px] gap-x-6 max-w-max mx-auto 
               lg:mx-0"
             >
-              <a href="https://github.com/imguptaharsh">
+              <a href="https://github.com/imguptaharsh" target="_blank">
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/imguptaharsh">
+              <a href="https://www.linkedin.com/in/imguptaharsh" target="_blank">
                 <FaLinkedinIn />
               </a>
-              <a href="https://twitter.com/harshkrguptaa">
+              <a href="https://www.leetcode.com/imguptaharsh/" target="_blank">
+                <FaCode />
+              </a>
+              <a href="https://twitter.com/harshkrguptaa" target="_blank">
                 <FaTwitter />
               </a>
-              <a href="https://www.instagram.com/btwitzhrsh/">
+              <a href="https://www.instagram.com/btwitzhrsh/" target="_blank">
                 <FaInstagram />
               </a>
+              
+              {/* <a href="https://www.leetcode.com/imguptaharsh/" target="_blank">
+                <FaFlag />
+              </a> */}
             </motion.div>
           </div>
           {/* image */}
