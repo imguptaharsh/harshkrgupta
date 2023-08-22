@@ -10,6 +10,9 @@ import Img2 from '../assets/portfolio-img2.png';
 import Img3 from '../assets/portfolio-img3.png';
 
 const Work = () => {
+  const seeWork=()=>{
+    window.open('https://github.com/imguptaharsh?tab=repositories', '_blank');
+  };
   return (
     <section className='section' id='work'>
       <div className='Container mx-auto px-8 lg:px-40'>
@@ -25,14 +28,16 @@ const Work = () => {
 
             {/* text */}
             <div className='flext-1 mb-20'>
-              <h2 className='h2 leading-tight text-teal-300'>
-                My Latest <br />
-                Work
-              </h2>
-              <p className='max-w-sm mb-16'>
-                I'm a MERN stack and Flutter developer and a machine learning enthusiast.
-              </p>
-              <button className='btn btn-sm text-black'>View all projects</button>
+              <h1 className='h1 leading-tight mb-6' style={{ color: "#51f8ec" }}>
+                My Latest <br />Work
+              </h1>
+              <h4 className='w-85 mb-12 text-[20px]'>
+              In my latest endeavor, I proudly wear the hats of a versatile MERN stack and Flutter developer, fueled by a passion for machine learning innovation.
+              </h4>
+              {/* <button className='btn btn-sm text-black'>View all projects</button> */}
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <button className='btn btn-sm text-black' onClick={seeWork}>View all projects</button>
+    </div>
             </div>
 
             {/* image */}

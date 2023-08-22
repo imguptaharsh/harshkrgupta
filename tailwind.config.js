@@ -24,9 +24,9 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/bg-img.jpg')",
-        multy: "url('./assets/bg-grad.jpg')",
+        multy: "url('./assets/bg-grad-blur.jpeg')",
         about: "url('./assets/hkg2.png')",
-        services: "url('./assets/mypic3.png')",
+        // services: "url('./assets/mypic3.png')",
       },
     },
   },

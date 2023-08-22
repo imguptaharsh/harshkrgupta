@@ -12,11 +12,11 @@ const App = () => {
   return (
     <div>
       <div className="bg-multy bg-no-repeat bg-cover overflow-hidden">
-         <div className="h-[40px]"></div>
-        <Header />
-        <div className="h-[20px]"></div>
-        <Banner />
          <div className="h-[50px]"></div>
+        {/* <Header /> */}
+        <div className="h-[90px]"></div>
+        <Banner />
+         <div className="h-[80px]"></div>
       </div>
       <div className="bg-multy bg-no-repeat bg-cover overflow-hidden">
         <Nav />
@@ -26,14 +26,15 @@ const App = () => {
         {/* <Services /> */}
       </div>
       <div className="bg-multy bg-no-repeat bg-cover overflow-hidden">
-        <Services />
+        <Services  />
       </div>
-      <div className="bg-multy bg-no-repeat bg-cover overflow-hidden">
+      {/* <div className="bg-multy bg-no-repeat bg-cover overflow-hidden">
         <Work />
-      </div>
+      </div> */}
       <div className="bg-multy bg-no-repeat bg-cover overflow-hidden">
         <Contact />
       </div>
+     
     </div>
   );
 };

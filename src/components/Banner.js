@@ -10,8 +10,9 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 //variants
 import { fadeIn } from "../variants";
-
+import { Link } from "react-scroll";
 const Banner = () => {
+
   return (
     // className="min-h-[85vh] lg:min-h-[78vh] flex items-center "
     <section className="min-h-[85vh] lg:min-h-[78vh] flex items-center " id="home">
@@ -26,7 +27,7 @@ const Banner = () => {
             <motion.h1 variants={fadeIn('up', 0.2)} initial="hidden"
             whileInView={'show'} viewport={{once:false,amount:0.7}} className="text-[55px] font-bold leading-[0.8] lg:text-[90px] text-white">
               Hello, I'm
-              <span className="text-teal-300" style={{ color: "#51f8ec" }}> Harsh</span>
+              <span  style={{ color: "#51f8ec" }}> Harsh</span>
               {/* <TypeAnimation
                 className="text-blue-300"
                 sequence={[" Harsh", 2000]} 
@@ -45,11 +46,11 @@ const Banner = () => {
               <span className=" text-white mr-4">I am a </span>
               <TypeAnimation
                 sequence={[
-                  "Web Developer",
+                  "Web Developer ",
                   2000,
-                  "Programmer",
+                  "Programmer ",
                   2000,
-                  "Flutter Developer",
+                  "Flutter Developer ",
                   2000,
                   // "Machine Learning Enthusiast",
                   2000,
@@ -77,7 +78,23 @@ const Banner = () => {
   whileInView={'show'} viewport={{once:false,amount:0.7}}
   className="flex flex-col items-center lg:flex-row lg:items-center max-w-max gap-x-6 mb-12 mx-auto lg:mx-0"
 >
-  <button className="btn btn-lg text-black">Contact me</button>
+<button
+          className="btn btn-lg text-black items-center"
+          
+        >
+          <Link
+            to="contact"
+            activeclass= 'active'
+            smooth={true}
+            spy={true}
+            // className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+          >
+            {/* <BsChatSquare /> */}
+            Contact me
+          </Link>
+          {/* <div> Contact me</div> */}
+        </button>
+        
   <a href="#" className="text-gradient btn-link mt-4 lg:mt-0">
     My Portfolio
   </a>

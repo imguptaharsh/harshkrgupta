@@ -9,6 +9,9 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const About = () => {
+  const viewResume=()=>{
+    window.open('https://drive.google.com/file/d/102XJYwLTOvNkUREybHNVoydvbBSishWd/view?usp=drive_link', '_blank');
+  };
   const [ref, inView] = useInView({
     threshold: 0.2,
     // triggerOnce: true,
@@ -22,7 +25,7 @@ const About = () => {
         >
           {/* img */}
           <motion.div
-            className="flex-1 bg-about bg-contain
+            className="flex-1 bg-about bg-contain mt-12
            bg-no-repeat h-[640px] mix-blend-lighten bg-top"
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -44,40 +47,22 @@ const About = () => {
             <h3 className="h3 mb-4">
               I'm a <span>Software Engineer</span> from India
             </h3>
-            <p>
-              I am a 3rd year student pursuing B.Tech in Computer Science and
-              Engineering from{" "}
-              <span>Indian Institute of Information Technology, Dharwad</span>.
-              I am a <span>Web Developer</span> and a{" "}
-              <span>Flutter Developer</span>. I am also a{" "}
-              <span>Competitive Programmer</span> and a{" "}
-              <span>Machine Learning Enthusiast</span>. I am a{" "}
-              <span>Quick Learner</span> and a <span>Team Player</span>. I am
-              always ready to learn new things and I am always ready to take up
-              new challenges.
-            </p>
+            <p className="text-[18px] mb-6">
+  Exploring the realms of Data Science and Artificial Intelligence as a 3rd year B.Tech student at the 
+  <span> Indian Institute of Information Technology, Dharwad</span>. Proficient as a <span>Web Developer</span> and skilled in crafting with <span>Flutter</span>. My passion extends to <span>Competitive Programming</span> and delving into the world of <span>Machine Learning</span>. Embracing challenges, I stand as a <span>Quick Learner</span> and dedicated <span>Team Player</span>, poised to conquer new horizons.
+</p>
+
+
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
-              <div>
-                <div className="text-[35px] font-tertiary text-gradient mb-2 ">
-                  {/* {inView ? <CountUp start={0} end={13} duration={3} /> : null} */}
-                  {/* <CountUp start={0} end={15} duration={3} />  */}
-                  {/* <div className="line-height-[2.2]"> */}
-                  <CountUp start={0} end={1} duration={4} />
-
-                  {/* </div> */}
-                </div>
-                <div className="font-primary text-sm tracking-[2px] ">
-                  Year of <br /> Experience
-                </div>
-              </div>
+             
 
               <div>
                 <div className="text-[35px] font-tertiary text-gradient mb-2">
                   {/* {
                   inView ?
                    <CountUp starts={0} end={13} duration={3}/>:null} */}
-                  <CountUp start={0} end={10} duration={3} /> +
+                  <CountUp start={0} end={10} duration={6} /> +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Project <br /> Completed
@@ -86,7 +71,7 @@ const About = () => {
               <div>
                 <div className="text-[25px] font-tertiary text-gradient mb-4">
                   {/* {inView ? <CountUp start={0} end={13} duration={3} /> : null} */}
-                  <CountUp start={0} end={1211} duration={3} /> +
+                  <CountUp start={0} end={1211} duration={4} /> +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Rating <br /> Codeforces
@@ -95,15 +80,15 @@ const About = () => {
               <div>
                 <div className="text-[30px] font-tertiary text-gradient mb-2">
                   {/* {inView ? <CountUp start={0} end={13} duration={3} /> : null} */}
-                  <CountUp start={0} end={400} duration={10} /> +
+                  <CountUp start={0} end={450} duration={10} /> +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  DSA Problems <br /> Solved (LC)
+                  DSA Problems <br /> Solved
                 </div>
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg text-black">Download CV</button>
+              <button className="btn btn-lg text-black" onClick={viewResume}>View Resume</button>
               <a href="#" className="text-gradient btn-link mt-4 lg:mt-0">
                 My Portfolio
               </a>

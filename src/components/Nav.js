@@ -2,9 +2,9 @@ import React from "react";
 
 import { BiClipboard, BiHomeAlt, BiUser } from "react-icons/bi";
 import {
-  BsclipboardData,
-  FaBriefcase,
-  BschatSquare,
+  // BsclipboardData,
+  // FaBriefcase,
+  // BschatSquare,
   BsBriefcase,
   BsChatSquare,
 } from "react-icons/bs";
@@ -51,7 +51,7 @@ const Nav = () => {
             <BiClipboard />
           </Link>
 
-          <Link
+          {/* <Link
             to="work"
             activeclass= 'active'
             smooth={true}
@@ -59,7 +59,7 @@ const Nav = () => {
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsBriefcase />
-          </Link>
+          </Link> */}
           <Link
             to="contact"
             activeclass= 'active'
