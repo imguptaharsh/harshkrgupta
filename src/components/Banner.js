@@ -69,8 +69,7 @@ const Banner = () => {
             viewport={{once:false,amount:0.7}}
             className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              I'm a web developer based in India. I have a passion for web
-              design and love to create for web and mobile devices.
+            Envisioning in binary and forging in code, I'm a digital architect sculpting tomorrow's possibilities with today's innovation.
             </motion.p>
             {/* social links */}
             <motion.div
