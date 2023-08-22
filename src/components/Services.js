@@ -83,10 +83,10 @@ const Services = () => {
 
               return (
                 <div
-                  className="border-b border-white/20 h-[146px] mb-[48px] flex"
+                  className="border-b border-white/20 h-[166px] mb-[40px] flex"
                   key={index}
                 >
-                  <div className="max-w-[586px]">
+                  <div className="max-w-[506px]">
                     <div>
                       <div className="flex">
                         <h4
@@ -105,7 +105,7 @@ const Services = () => {
                       </div>
                     </div>
                     
-                    <p className="text-[18px] font-secondary leading-tight">
+                    <p className="text-[17px] font-secondary leading-tight">
                       {description}
                     </p>
                   </div>
